@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_height="56dp"
+        android:layout_width="56dp"
+        android:elevation="2sp"
+        android:layout_marginStart="@dimen/header_horizontal_margin"
+        android:layout_marginEnd="@dimen/header_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:src="@drawable/circle">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginStart="@dimen/header_horizontal_margin"
+        android:layout_marginEnd="@dimen/header_horizontal_margin"
+        android:layout_centerVertical="true"
+
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerInside"
+        android:elevation="4sp"
+
+        android:src="@drawable/np_fuel_med"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:tint="@android:color/white"/>
+
+    <LinearLayout
+        android:id="@+id/lin_mileage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toEndOf="@+id/icon">
+
+        <TextView
+            android:id="@+id/val_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_sub_font"/>
+
+        <TextView
+            android:id="@+id/val_mileage_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/smidge"
+
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_sub_font"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/val_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lin_mileage"
+        android:layout_toEndOf="@+id/icon"
+        android:maxLines="1"
+
+        android:textColor="@color/secondary_text"
+        android:textSize="@dimen/field_font"/>
+
+    <LinearLayout
+        android:id="@+id/lin_trip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/val_date"
+        android:layout_toEndOf="@+id/icon">
+
+        <TextView
+            android:id="@+id/val_tripo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+
+        <TextView
+            android:id="@+id/val_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+
+            android:layout_marginStart="@dimen/smidge"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginStart="85dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/divider"/>
+</RelativeLayout>

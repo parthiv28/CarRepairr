@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/val_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:hint="@string/field_date"
+            android:maxLines="1"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+            app:met_baseColor="@color/primary_text"
+            app:met_primaryColor="@color/accent"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/field_date"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/val_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/val_date"
+
+            android:hint="@string/field_time_end"
+            android:maxLines="1"
+
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+
+            app:met_baseColor="@color/primary_text"
+            app:met_primaryColor="@color/accent"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/field_time_end"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/val_odo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/val_time"
+
+            android:inputType="number"
+            android:hint="@string/field_odo"
+            android:maxLines="1"
+
+            app:met_baseColor="@color/primary_text"
+            app:met_primaryColor="@color/accent"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/field_odo"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/card_info_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/card_info_iv"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:elevation="4sp"
+
+            android:background="@drawable/rect"/>
+
+        <TextView
+            android:id="@+id/card_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:elevation="10sp"
+
+            android:maxLines="1"
+            android:textSize="24sp"
+            android:textColor="@color/header"/>
+
+        <LinearLayout
+            android:id="@+id/lin_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/card_info_title"
+            android:elevation="10sp">
+
+            <ImageView
+                android:id="@+id/np_cost"
+                android:layout_height="32dp"
+                android:layout_width="32dp"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:elevation="4sp"
+
+                android:tint="@color/secondary_text"
+                android:src="@drawable/np_usd"/>
+
+            <TextView
+                android:id="@+id/value_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="2"
+
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/info_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/content_vertical_space"
+
+                android:text="@string/hint_no_cost"
+                android:maxLines="1"
+                android:textSize="@dimen/field_font"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_tripo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin_cost"
+            android:elevation="10sp">
+
+            <ImageView
+                android:id="@+id/np_speedo"
+                android:layout_height="32dp"
+                android:layout_width="32dp"
+                android:padding="2dp"
+                android:layout_weight="1"
+                android:elevation="4sp"
+
+                android:tint="@color/secondary_text"
+                android:src="@drawable/np_speedo"/>
+
+            <TextView
+                android:id="@+id/value_tripo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="2"
+
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/info_tripo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/content_vertical_space"
+
+                android:text="@string/hint_no_mileage"
+                android:maxLines="1"
+                android:textSize="@dimen/field_font"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin_tripo"
+            android:elevation="10sp">
+
+            <ImageView
+                android:id="@+id/np_mileage"
+                android:layout_height="32dp"
+                android:layout_width="32dp"
+                android:padding="4dp"
+                android:layout_weight="1"
+                android:elevation="4sp"
+
+                android:tint="@color/secondary_text"
+                android:src="@drawable/np_mileage"/>
+
+            <TextView
+                android:id="@+id/value_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="2"
+
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/info_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/content_vertical_space"
+
+                android:text="@string/hint_no_mileage"
+                android:maxLines="1"
+                android:textSize="@dimen/field_font"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lin_mileage_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/lin_mileage"
+            android:elevation="10sp">
+
+            <ImageView
+                android:id="@+id/np_mileage_cost"
+                android:layout_height="32dp"
+                android:layout_width="32dp"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:elevation="4sp"
+
+                android:tint="@color/secondary_text"
+                android:src="@drawable/np_mileage_cost"/>
+
+            <TextView
+                android:id="@+id/value_mileage_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:layout_weight="2"
+
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/info_mileage_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:layout_marginStart="@dimen/content_vertical_space"
+
+                android:text="@string/hint_no_mileage"
+                android:maxLines="1"
+                android:textSize="@dimen/field_font"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

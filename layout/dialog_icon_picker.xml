@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/field_vertical_margin"
+    android:layout_marginStart="@dimen/field_horizontal_margin"
+    android:layout_marginEnd="@dimen/field_horizontal_margin"
+    android:background="@color/accent_dark">
+
+    <GridView
+    android:id="@+id/iconGrid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnWidth="100dp"
+    android:numColumns="auto_fit"
+    android:verticalSpacing="10dp"
+    android:horizontalSpacing="10dp"
+    android:layout_margin="@dimen/content_vertical_space"
+    android:stretchMode="columnWidth"
+    android:gravity="center"/>
+</RelativeLayout>

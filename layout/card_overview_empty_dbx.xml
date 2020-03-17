@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    card_view:cardElevation="10sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/np_dbx"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="fitCenter"
+            android:gravity="start"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/np_dbx"
+            android:padding="8dp"
+            android:background="@color/primary_dark"/>
+
+        <TextView
+            android:id="@+id/ohNoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/np_dbx"
+            android:gravity="center_horizontal"
+
+            android:maxLines="1"
+            android:background="@color/primary_dark"
+
+            android:text="@string/pref_title_cat_dropbox"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_font"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/np_dbx"
+            android:layout_below="@+id/ohNoes"
+            android:gravity="center_horizontal"
+
+            android:padding="@dimen/content_vertical_space"
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"
+
+            android:text="@string/empty_db_dbx"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

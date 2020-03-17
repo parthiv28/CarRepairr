@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_height="56dp"
+            android:layout_width="56dp"
+            android:elevation="2sp"
+            android:layout_margin="@dimen/content_vertical_space"
+            android:layout_centerVertical="true"
+            android:background="@drawable/circle">
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_margin="@dimen/content_vertical_space"
+            android:layout_centerVertical="true"
+
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="centerInside"
+            android:elevation="4sp"
+            android:padding="@dimen/content_vertical_space"
+
+            android:src="@drawable/ic_event"
+            android:tint="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/icon"
+
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_margin="@dimen/content_vertical_space"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_sub_font"
+            android:text="cat"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category"
+            android:layout_toEndOf="@+id/icon">
+
+            <TextView
+                android:id="@+id/label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/content_vertical_space"
+
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"
+
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/field_font"
+                android:text="label"/>
+
+            <TextView
+                android:id="@+id/value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/content_vertical_space"
+
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:singleLine="true"
+
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/field_font"
+                android:text="val"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

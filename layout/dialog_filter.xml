@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- I realize this is point less... But the view wouldnt match parent -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_transparent"
+    android:elevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/content_vertical_space">
+
+        <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
+            android:id="@+id/met_filter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+
+            android:inputType="textCapWords"
+            android:hint="@string/label_search"
+            android:singleLine="true"
+
+            app:met_baseColor="@color/md_white_1000"
+            app:met_primaryColor="@color/md_white_1000"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/label_search"/>
+
+        <ImageButton
+            android:id="@+id/button_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/content_vertical_space"
+
+            android:layout_weight="2"
+            android:background="@null"
+            android:src="@drawable/ic_action_ok"/>
+
+        <Space
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            android:id="@+id/button_not_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="@dimen/content_vertical_space"
+            android:layout_weight="2"
+            android:background="@null"
+            android:src="@drawable/ic_action_not_ok"/>
+    </LinearLayout>
+</RelativeLayout>

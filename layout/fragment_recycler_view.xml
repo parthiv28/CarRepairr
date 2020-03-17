@@ -1,0 +1,101 @@
+<android.support.design.widget.CoordinatorLayout
+        android:id="@+id/snackbar"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/cardList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="8dp"
+            android:paddingBottom="64dp"
+            android:clipToPadding="false"
+
+            android:clickable="true"
+            android:focusable="true"/>
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fabmenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true"
+            fab:menu_labels_textColor="@color/secondary_text"
+            fab:menu_labels_colorNormal="@android:color/white"
+            fab:menu_backgroundColor="@color/background_dim"
+            fab:menu_animationDelayPerItem="50"
+            fab:menu_colorNormal="@color/accent"
+            fab:menu_colorPressed="@color/primary_light"
+            fab:menu_colorRipple="@color/primary_dark"
+            app:layout_behavior="com.kd8bny.maintenanceman.behaviors.FloatingActionMenuBehavior">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add_mileage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_size="mini"
+                fab:fab_label="@string/menu_add_mileage"
+                fab:fab_showAnimation="@anim/fab_scale_up"
+                fab:fab_hideAnimation="@anim/fab_scale_down"
+                fab:fab_colorNormal="@color/accent"
+                fab:fab_colorPressed="@color/primary_light"
+                fab:fab_colorRipple="@color/primary_dark"
+
+                android:src="@drawable/ic_mileage"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_size="mini"
+                fab:fab_label="@string/menu_add_event"
+                fab:fab_showAnimation="@anim/fab_scale_up"
+                fab:fab_hideAnimation="@anim/fab_scale_down"
+                fab:fab_colorNormal="@color/accent"
+                fab:fab_colorPressed="@color/primary_light"
+                fab:fab_colorRipple="@color/primary_dark"
+
+                android:src="@drawable/ic_action_add_event_white"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add_business"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_size="mini"
+                fab:fab_label="@string/menu_add_business"
+                fab:fab_showAnimation="@anim/fab_scale_up"
+                fab:fab_hideAnimation="@anim/fab_scale_down"
+                fab:fab_colorNormal="@color/accent"
+                fab:fab_colorPressed="@color/primary_light"
+                fab:fab_colorRipple="@color/primary_dark"
+
+                android:src="@drawable/ic_speedo"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_add_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                fab:fab_size="mini"
+                fab:fab_label="@string/title_add_field"
+                fab:fab_showAnimation="@anim/fab_scale_up"
+                fab:fab_hideAnimation="@anim/fab_scale_down"
+                fab:fab_colorNormal="@color/accent"
+                fab:fab_colorPressed="@color/primary_light"
+                fab:fab_colorRipple="@color/primary_dark"
+
+                android:src="@drawable/ic_engine_white"/>
+        </com.github.clans.fab.FloatingActionMenu>
+</android.support.design.widget.CoordinatorLayout>
+
+
+

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_height="56dp"
+        android:layout_width="56dp"
+        android:elevation="2sp"
+        android:layout_marginStart="@dimen/header_horizontal_margin"
+        android:layout_marginEnd="@dimen/header_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:src="@drawable/circle">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_marginStart="@dimen/header_horizontal_margin"
+        android:layout_marginEnd="@dimen/header_horizontal_margin"
+        android:layout_centerVertical="true"
+
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:scaleType="centerInside"
+        android:elevation="4sp"
+
+
+        android:src="@drawable/ic_event"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:tint="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/val_spec_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_gravity="end"
+        android:layout_alignParentTop="true"
+
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginStart="@dimen/header_horizontal_margin"
+        android:layout_marginEnd="@dimen/header_horizontal_margin"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/header_sub_font"/>
+
+    <LinearLayout
+        android:id="@+id/date"
+        android:layout_below="@+id/val_spec_event"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="@dimen/header_horizontal_margin">
+
+        <TextView
+            android:id="@+id/label_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+
+        <TextView
+            android:id="@+id/val_spec_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/odo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginStart="@dimen/header_horizontal_margin">
+
+        <TextView
+            android:id="@+id/label_odo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+
+        <TextView
+            android:id="@+id/val_spec_odo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:layout_marginStart="96dp"
+        android:layout_alignParentBottom="true"
+
+        android:background="@color/divider"/>
+</RelativeLayout>

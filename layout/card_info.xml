@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="true"
+    card_view:cardCornerRadius="5dp"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:id="@+id/card_info_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/card_info_iv"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:elevation="4sp"
+
+            android:background="@drawable/rect"/>
+
+        <TextView
+            android:id="@+id/card_info_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:elevation="10sp"
+
+            android:text="GE"
+            android:maxLines="1"
+            android:textSize="24sp"
+            android:textColor="@color/header"/>
+
+        <LinearLayout
+            android:id="@+id/card_info_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_header"
+            android:orientation="vertical"
+            android:layout_below="@+id/card_info_iv"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

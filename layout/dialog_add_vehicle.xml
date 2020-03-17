@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/field_vertical_margin"
+    android:layout_marginStart="@dimen/field_horizontal_margin"
+    android:layout_marginEnd="@dimen/field_horizontal_margin">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/year_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/field_vertical_margin"
+
+        android:inputType="number"
+        android:singleLine="true"
+
+        app:met_baseColor="@color/primary_text"
+        app:met_primaryColor="@color/accent"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/make_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/field_vertical_margin"
+        android:layout_below="@id/year_val"
+
+        android:inputType="textCapWords"
+        android:singleLine="true"
+
+        app:met_baseColor="@color/primary_text"
+        app:met_primaryColor="@color/accent"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/model_val"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/field_vertical_margin"
+        android:layout_below="@id/make_val"
+
+        android:inputType="textCapWords"
+        android:singleLine="true"
+
+        app:met_baseColor="@color/primary_text"
+        app:met_primaryColor="@color/accent"
+        app:met_errorColor="@color/error"
+        app:met_floatingLabel="highlight"/>
+</RelativeLayout>

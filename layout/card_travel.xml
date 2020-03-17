@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/header"
+        android:layout_height="4dp"
+        android:layout_width="match_parent"
+        android:elevation="2sp"
+        android:background="@drawable/rect"/>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:padding="@dimen/content_vertical_space">
+
+        <TextView
+            android:id="@+id/val_dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_sub_font"
+            android:text="dest"/>
+
+        <TextView
+            android:id="@+id/val_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/val_dest"
+
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"
+            android:text="date"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/val_date">
+
+            <TextView
+                android:id="@+id/val_delta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:maxLines="1"
+
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/field_font"
+                android:text="xMi"/>
+
+            <TextView
+                android:id="@+id/val_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:maxLines="1"
+
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/field_font"
+                android:text="xhrs"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

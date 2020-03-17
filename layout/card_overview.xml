@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true"
+    card_view:cardElevation="5sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false">
+
+        <ImageView
+            android:id="@+id/rect"
+            android:layout_height="36dp"
+            android:layout_width="match_parent"
+            android:elevation="4sp"
+
+            android:background="@drawable/rect"/>
+
+        <ImageView
+            android:id="@+id/carPicBack"
+            android:layout_height="64dp"
+            android:layout_width="64dp"
+            android:layout_marginTop="8dp"
+            android:elevation="6sp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/circle"/>
+
+        <ImageView
+            android:id="@+id/carPic"
+            android:layout_height="64dp"
+            android:layout_width="64dp"
+            android:layout_marginTop="8dp"
+            android:elevation="6sp"
+            android:layout_marginStart="32dp"
+
+            android:src="@drawable/np_car"
+            android:tint="@android:color/white"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/vehicle_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rect"
+            android:layout_toEndOf="@+id/carPic"
+            android:paddingStart="@dimen/content_vertical_space"
+            android:paddingEnd="@dimen/content_vertical_space"
+
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:maxLines="1"
+            android:maxEms="12"
+            android:minEms="12"
+
+            android:text="@string/no_data"
+            android:textColor="@color/primary_text"
+            android:textSize="@dimen/header_sub_font"/>
+
+        <TextView
+            android:id="@+id/last_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vehicle_title"
+            android:layout_toEndOf="@+id/carPic"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="@dimen/content_vertical_space"
+            android:paddingEnd="@dimen/content_vertical_space"
+
+            android:textColor="@color/secondary_text"
+            android:textSize="@dimen/field_font"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/last_label"
+            android:layout_toEndOf="@+id/carPic"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/val_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/content_vertical_space"
+                android:paddingEnd="@dimen/content_vertical_space"
+
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:fadingEdge="horizontal"
+                android:maxLines="1"
+
+
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/field_font"/>
+
+            <TextView
+                android:id="@+id/val_odo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/content_vertical_space"
+                android:paddingEnd="@dimen/content_vertical_space"
+
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:maxLines="1"
+
+
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/field_font"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

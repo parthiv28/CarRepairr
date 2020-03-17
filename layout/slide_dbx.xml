@@ -1,0 +1,41 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_dark">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:fontFamily="sans-serif-thin"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/header_font"
+        android:text="@string/pref_title_cat_dropbox"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/np_dbx"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="5"
+        android:layout_gravity="bottom"
+        android:paddingTop="32dp"
+        android:paddingStart="@dimen/header_horizontal_margin"
+        android:paddingEnd="@dimen/header_horizontal_margin"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="@string/summary_dbx"/>
+</LinearLayout>

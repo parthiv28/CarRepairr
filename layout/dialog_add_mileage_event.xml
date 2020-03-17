@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/field_vertical_margin"
+        android:padding="8dp">
+
+        <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            android:id="@+id/spinner_roster"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/field_vertical_margin"
+
+            android:hint="@string/hint_event_spinner"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/tripometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spinner_roster"
+            android:padding="@dimen/content_vertical_space"
+
+            android:inputType="number"
+            android:hint="@string/field_trip"
+            android:maxLines="1"
+
+            app:met_baseColor="@color/primary_text"
+            app:met_primaryColor="@color/accent"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/field_trip"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/fill_vol"
+            android:layout_below="@+id/tripometer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/content_vertical_space"
+
+            android:inputType="number"
+            android:hint="@string/field_fill_vol"
+            android:maxLines="1"
+
+            app:met_baseColor="@color/primary_text"
+            app:met_primaryColor="@color/accent"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/field_fill_vol"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/price"
+            android:layout_below="@+id/fill_vol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/content_vertical_space"
+
+            android:inputType="number"
+            android:hint="@string/field_mileage_price"
+            android:maxLines="1"
+
+            app:met_baseColor="@color/primary_text"
+            app:met_primaryColor="@color/accent"
+            app:met_errorColor="@color/error"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="@string/field_mileage_price"/>
+    </RelativeLayout>
+</ScrollView>
